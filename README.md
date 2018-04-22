@@ -138,9 +138,6 @@ And likewise with a strict clock, which is more like what was done in Moller et 
 ```r
 (boot.dtr.strict <-  parboot.treedater( dtr.strict , ncpu = 8)  )
 ```
-
-
-
 ```
 ##                           pseudo ML         2.5 %      97.5 %
 ## Time of common ancestor 0.067139923 -3.7643027622 0.174085965
@@ -151,7 +148,7 @@ And likewise with a strict clock, which is more like what was done in Moller et 
 
 ## Summary 
 * Our rates are a little lower, but close to, what was reported by Moller et al. using the structured coalescent prior, especially with a strict clock.
-* The estimated TMRCA is in early 2014, which is an acceptable estimate. This is intermediate between the estimates using structured coalescent and other priors reported by Muller. 
-* We can't very well estimate the lower bound of TMRCA from this small aligment using the parametric bootstrap. The priors used in the Bayesian methods probably have a large influence on that. 
-* Estimates could not doubt be improved by doing a proper phylogenetic analysis and fine-tuning parameters
+* The estimated TMRCA is in early 2014, which is an acceptable estimate. This is intermediate between the estimates using structured coalescent and other priors reported by Moller. 
+* We can't very well estimate the lower bound of TMRCA from this small aligment using the parametric bootstrap. The priors used in the Bayesian methods probably have a large influence on that. We also have overly wide confidence intervals. This could be improved by using a more time consuming bootstrap procedure. 
+* Estimates could certainly be improved by doing a proper phylogenetic analysis and fine-tuning parameters
 * All of the preceding analysis took less than one minute of computation time. 
