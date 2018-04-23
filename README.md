@@ -146,6 +146,14 @@ And likewise with a strict clock, which is more like what was done in Moller et 
 ##  For more detailed output, $trees provides a list of each fit to each simulation
 ```
 
+We can also do a quick root-to-tip regression for comparison. This actually gives a higher rate more similar to the original BEAST analysis from Gire. 
+```r
+estimate.mu( rtt( tre, sts ), sts ) 
+```
+```
+##  0.002708866
+```
+
 ## Summary 
 * Our rates are a little lower, but close to, what was reported by Moller et al. using the structured coalescent prior, especially with a strict clock.
 * The estimated TMRCA is in early 2014, which is an acceptable estimate. This is intermediate between the estimates using structured coalescent and other priors reported by Moller. 
